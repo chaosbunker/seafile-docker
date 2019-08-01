@@ -1,4 +1,4 @@
-FROM seafileltd/pro-base-mc:18.04
+FROM chaosbunker/seafile-pro-base:latest
 WORKDIR /opt/seafile
 
 ENV SEAFILE_VERSION=7.0.11 SEAFILE_SERVER=seafile-pro-server
