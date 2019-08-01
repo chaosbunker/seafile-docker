@@ -1,4 +1,4 @@
-FROM seafileltd/base-mc:18.04
+FROM chaosbunker/base-mc:latest
 
 # syslog-ng and syslog-forwarder would mess up the container stdout, not good
 # when debugging/upgrading.
