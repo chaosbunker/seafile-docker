@@ -1,7 +1,7 @@
 FROM chaosbunker/seafile-pro-base:latest
 WORKDIR /opt/seafile
 
-ENV SEAFILE_VERSION=7.0.11 SEAFILE_SERVER=seafile-pro-server
+ENV SEAFILE_VERSION=7.0.13 SEAFILE_SERVER=seafile-pro-server
 
 RUN mkdir -p /etc/my_init.d
 
