@@ -1,13 +1,13 @@
 FROM chaosbunker/seafile-pro-base:latest
 WORKDIR /opt/seafile
 
-ENV SEAFILE_VERSION=7.0.13 SEAFILE_SERVER=seafile-pro-server
+ENV SEAFILE_VERSION=7.0.16 SEAFILE_SERVER=seafile-pro-server
 
 RUN mkdir -p /etc/my_init.d
 
 RUN mkdir -p /opt/seafile/
 
-RUN curl -sSL -G -d "p=/pro/seafile-pro-server_${SEAFILE_VERSION}_x86-64_Ubuntu.tar.gz&dl=1" https://download.seafile.com/d/6e5297246c/files/ \
+RUN curl -sSL -G -d "p=/seafile-pro-server_${SEAFILE_VERSION}_x86-64_Ubuntu.tar.gz&dl=1" https://download.seafile.com/d/6e5297246c/files/ \
     | tar xzf - -C /opt/seafile/
 
 #ADD seafile-pro-server_${SEAFILE_VERSION}_x86-64_Ubuntu.tar.gz /opt/seafile/
