@@ -57,7 +57,7 @@ RUN mkdir -p /etc/service/nginx && \
 # Seafile
 WORKDIR /opt/seafile
 
-ENV SEAFILE_VERSION=7.1.3 SEAFILE_SERVER=seafile-pro-server
+ENV SEAFILE_VERSION=7.1.4 SEAFILE_SERVER=seafile-pro-server
 
 RUN mkdir -p /opt/seafile/ && cd /opt/seafile/ && \
     wget -O seafile-pro-server_${SEAFILE_VERSION}_x86-64_Ubuntu.tar.gz \
